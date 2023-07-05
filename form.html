@@ -1,0 +1,75 @@
+<html>
+    <title>Box Studios Webpage™</title>
+    <style>
+    body{
+        margin: 0px;
+        background-color: purple;
+    }
+    main {
+        margin: 20px;
+    }
+    .navbar ul {
+        list-style-type: none;
+        background-color: blue;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    .navbar a{
+        color: green;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-size: 24px;
+    }
+    .navbar a:hover{
+        background-color: light-blue;
+    }
+    .navbar li {
+        float: left;
+    }
+    </style>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Jobs</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>Form</h3>
+                    <form action="" method="post" enctype="multipart/form-data">
+    <label for = "username">Username:</label>
+    <input id = "username" type="text" required placeholder="username"><br>
+    <label for = "password">Password:</label>
+    <input id = "password" type="password" minlength = "5" required placeholder="password"><br>
+    <label for = "email">Email:</label>
+    <input id = "email" type="email" required placeholder="something@gmail.com"><br>
+    <label for = "phone">Phone Number:</label>
+    <input id = "phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br>
+    <label for = "bday">Birth Date:</label>
+    <input id = "bday" type="date" required><br>
+    <label for = "select">Job:</label>
+    <select id = "select">
+        <option value = "select">select one</option>
+        <option value = "programmer">programmer</option>
+        <option value = "manager">manager</option></option>
+    </select><br>
+    <label for "resume">resume</label><br>
+    <textarea id = resume rows = "16" cols = "30"></textarea><br>
+    <label for "image">Staff Member image</label><br>
+    <input type="file" id = "image" accept="image/png, image/jpeg, image/gif"><br>
+    <input type="reset">
+    <input type="submit">
+    
+    
+    
+</form>
+        </main>
+        
+
+    </body>
+</html>
+
+

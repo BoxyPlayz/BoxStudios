@@ -3,11 +3,41 @@
     <head>
         <title>Box Studios Webpage™</title>
         <style>
+        body{
+        margin: 0px;
+        background-color: purple;
+    }
+    main {
+        margin: 20px;
+    }
+    .navbar ul {
+        list-style-type: none;
+        background-color: blue;
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+    .navbar a{
+        color: green;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-size: 24px;
+    }
+    .navbar a:hover{
+        background-color: light-blue;
+    }
+    .navbar li {
+        float: left;
+    }
             .header {
                 font-size: 32px;
                 background-color: green;
                 text-align:center;
                 color: rgb(0,0,255);
+                margin: 0px;
             }
             .text {
                 font-size:16px;
@@ -21,16 +51,21 @@
             .game {
                 size: 210%
             }
-            body {
-                background-color: yellow;
-            }
-        </style>
+            </style>
     </head>
     <body>
+                      <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Jobs</a></li>
+            </ul>
+        </nav>
         <div class = "header">
             <p>Welcome to the Box Studios Webpage!</p>
         </div>
-        <img src = "boxbuddies.jpeg">
+        </nav>
+        <main>
+                    <img src = "boxbuddies.jpeg">
         <div class = "catagory">
             <p>The history of Box Studios:</p>
         </div>
@@ -41,6 +76,10 @@
             <p>2023: Box Studios Channel goes live</p>
             <p>Future: Whiz Movie released</p>
         </div>
-        <video src = "Scene1.mp4"></video>
+        <video controls src = "Scene1.mp4"></video><br>
+        <button href = "youtube.com/@boxbuddiesofficial">
+            Youtube Channel
+        </button>
+        </main>
     </body>
 </html>
